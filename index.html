@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Waste Management and Donation Co. & Ltd.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Food Waste Management and Donation Co. & Ltd.</h1>
+        <nav>
+            <a href="#">Home</a> |
+            <a href="#">About Us</a> |
+            <a href="#">Feedback</a> |
+            <a href="#">Rules & Regulations</a> |
+            <input type="text" placeholder="Search bar" id="search-bar">
+            
+            <!-- Dropdown Button -->
+            <div class="dropdown">
+                <button class="three-dots" onclick="toggleMenu()">&#9776;</button>
+                <div class="dropdown-content" id="dropdownMenu">
+                    <button onclick="showLoginForm()">Login</button>
+                    <button onclick="showRegisterForm()">Register</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Login Form -->
+    <section id="login-form" class="form hidden">
+        <h2>Login</h2>
+        <form>
+            <label>Username:</label>
+            <input type="text" name="username" required><br>
+            <label>Password:</label>
+            <input type="password" name="password" required><br>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <!-- Registration Option Buttons Section -->
+    <section id="register-options" class="form hidden">
+        <h2>Select Registration Type</h2>
+        <button onclick="showDonorForm()">Register as Donor</button>
+        <button onclick="showRequestorForm()">Register as Requestor</button>
+    </section>
+
+    <!-- Donor Registration Form -->
+    <section id="donor-form" class="form hidden">
+        <h2>Welcome to Register as Donor</h2>
+        <form>
+            <label>Full Name:</label>
+            <input type="text" name="fullname" required><br>
+            <label>Shop Name:</label>
+            <input type="text" name="shopname" required><br>
+            <label>Shop Location:</label>
+            <input type="text" name="shoplocation" required><br>
+            <label>Phone No.:</label>
+            <input type="tel" name="phone" required><br>
+            <label>Email:</label>
+            <input type="email" name="email" required><br>
+            <label>Password:</label>
+            <input type="password" name="password" required><br>
+            <p>Note: Use a strong password<br>
+                - At least one number (1-9)<br>
+                - At least one special character<br>
+                - Do not repeat a character 3 times in a row
+            </p>
+            <button type="submit">Register as Donor</button>
+        </form>
+    </section>
+
+    <!-- Requestor Registration Form -->
+    <section id="requestor-form" class="form hidden">
+        <h2>Welcome to Register as Requestor</h2>
+        <form>
+            <label>Full Name:</label>
+            <input type="text" name="fullname" required><br>
+            <label>NGO Name:</label>
+            <input type="text" name="ngoname" required><br>
+            <label>NGO Registration No.:</label>
+            <input type="text" name="ngoreg" required><br>
+            <label>Phone No.:</label>
+            <input type="tel" name="phone" required><br>
+            <label>Email:</label>
+            <input type="email" name="email" required><br>
+            <label>Password:</label>
+            <input type="password" name="password" required><br>
+            <p>Note: Use a strong password<br>
+                - At least one number (1-9)<br>
+                - At least one special character<br>
+                - Do not repeat a character 3 times in a row
+            </p>
+            <button type="submit">Register as Requestor</button>
+        </form>
+    </section>
+
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="https://images.pexels.com/photos/4665591/pexels-photo-4665591.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Home Image">
+            <img src="https://images.pexels.com/photos/3870491/pexels-photo-3870491.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Donor Image">
+            <img src="https://images.pexels.com/photos/1974690/pexels-photo-1974690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Requestor Image">
+            <img src="https://images.pexels.com/photos/1789405/pexels-photo-1789405.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="About Us Image">
+            <img src="https://images.pexels.com/photos/1799507/pexels-photo-1799507.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Feedback Image">
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Rules & Regulations</a></li>
+                </ul>
+            </div>
+            <div class="quick-contact">
+                <h3>Quick Contact</h3>
+                <ul>
+                    <li>Email: info@foodmanagement.com</li>
+                    <li>Phone: +91 9823463243</li>
+                    <li>Address: 123 Food St, Donation City</li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Food Waste Management and Donation Co. & Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="bundle.js"></script>
+</body>
+</html>
